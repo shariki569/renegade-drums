@@ -21,7 +21,7 @@ export default function Videos() {
           <div className="wrapper btm3_con">
             <div className="btm3_info">
               <h2>Performance clips</h2>
-              <p>Replace files in <code>public/videos/</code> with your own recordings when ready.</p>
+              
             </div>
             <div className="video_grid">
               {VIDEO_CLIPS.map((clip) => (
