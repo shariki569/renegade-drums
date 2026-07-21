@@ -22,6 +22,45 @@ export default function AudioPlayer() {
     el.volume = volume
   }, [volume])
 
+  useEffect(() => {
+    const el = audioRef.current
+    if (!el) return
+
+    let unlocked = false
+
+    function tryPlay() {
+      if (!el || unlocked) return
+      el.muted = false
+      el.volume = volume
+      return el.play()
+        .then(() => {
+          unlocked = true
+          setPlaying(true)
+        })
+        .catch(() => {
+          setPlaying(false)
+        })
+    }
+
+    function unlock() {
+      tryPlay()?.finally(() => {
+        if (unlocked) {
+          window.removeEventListener('pointerdown', unlock)
+          window.removeEventListener('keydown', unlock)
+        }
+      })
+    }
+
+    tryPlay()
+    window.addEventListener('pointerdown', unlock)
+    window.addEventListener('keydown', unlock)
+
+    return () => {
+      window.removeEventListener('pointerdown', unlock)
+      window.removeEventListener('keydown', unlock)
+    }
+  }, [])
+
   function togglePlay() {
     const el = audioRef.current
     if (!el) return
@@ -47,8 +86,9 @@ export default function AudioPlayer() {
         ref={audioRef}
         src={SRC}
         loop
+        autoPlay
         playsInline
-        preload="metadata"
+        preload="auto"
         className="audio_src"
         onLoadedMetadata={(e) => setDuration(e.currentTarget.duration || 0)}
         onTimeUpdate={(e) => setCurrent(e.currentTarget.currentTime || 0)}
