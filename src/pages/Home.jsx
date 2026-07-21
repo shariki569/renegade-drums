@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import HeroVideos from '../HeroVideos'
 import { FB_URL, EMAIL, PHONE, PHONE_TEL, SLOGAN } from '../constants'
 
-const ABOUT_IMG = '/src/assets/about-img.jpg'
-const TRIBAL1 = '/src/assets/pahugyaw-2026.jpg'
-const TRIBAL2 = '/src/assets/cmc-power-generators.jpg'
-const TRIBAL3 = '/src/assets/miss-kittymae-jewels.jpg'
-const FEAT1 = '/src/assets/feat1.jpg'
-const FEAT2 = '/src/assets/feat2.jpg'
-const FEAT3 = '/src/assets/feat3.jpg'
+const ABOUT_IMG = '/about-img.jpg'
+const TRIBAL1 = '/pahugyaw-2026.jpg'
+const TRIBAL2 = '/cmc-power-generators.jpg'
+const TRIBAL3 = '/miss-kittymae-jewels.jpg'
+const FEAT1 = '/feat1.jpg'
+const FEAT2 = '/feat2.jpg'
+const FEAT3 = '/feat3.jpg'
 
 export default function Home() {
   return (
