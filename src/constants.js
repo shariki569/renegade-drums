@@ -18,7 +18,7 @@ export const GALLERY = [
 export const VIDEO_CLIPS = [
   { src: '/videos/highlight-1.mp4', poster: 'https://images.unsplash.com/photo-1461360228754-6e81c26b440c?auto=format&fit=crop&w=900&q=80', title: 'On the march', desc: 'Parade cadence and street energy.' },
   { src: '/videos/highlight-2.mp4', poster: 'https://images.unsplash.com/photo-1571333252851-f59ed4b7f4f8?auto=format&fit=crop&w=900&q=80', title: 'Drumline drive', desc: 'Double drums leading the front line.' },
-  { src: '/videos/highlight-3.mp4', poster: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=80', title: 'Bugle & brass', desc: 'Back-line bugle call for classic banda feel.' },
+  { src: '/videos/highlight-3.mp4', poster: 'videos/highlight-3.jpg', title: 'Sinulog', desc: 'Back-line bugle call for classic banda feel.' },
 ]
 
 export const SINULOG_GALLERY = [
