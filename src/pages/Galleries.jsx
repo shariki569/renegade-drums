@@ -27,7 +27,7 @@ export default function Galleries() {
             </div>
             <GalleryGrid items={SINULOG_GALLERY} className="btm4_boxes gallery_grid" label="Sinulog 2025 gallery" />
             <div className="hero_cta" style={{ marginTop: '1.75rem' }}>
-              <Link className="btn_primary" to="/book">Book for Sinulog 2025</Link>
+              <Link className="btn_primary" to="/book">Book Renegade Now!</Link>
             </div>
           </div>
         </div>
