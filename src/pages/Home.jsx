@@ -118,9 +118,9 @@ export default function Home() {
             </section>
             <section>
               <figure className="photo_slot">
-                <img src={TRIBAL3} alt="Miss Kittymae Jewels" width="700" height="460" />
+                <img src={TRIBAL3} alt="Iino Day 2026" width="700" height="460" />
               </figure>
-              <h3>Miss Kittymae Jewels</h3>
+              <h3>Iino Day 2026</h3>
               <p>Renegade Drums and Percussions brought the energy and excitement to Iino Day 2026 at Maribago Blue Water Resort!</p>
             </section>
           </div>
