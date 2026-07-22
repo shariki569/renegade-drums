@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { FB_URL, SLOGAN } from '../constants'
 import mainLogo from '../assets/main-logo.jpg'
 import AudioPlayer from './AudioPlayer'
+import TawkTo from './TawkTo'
 
 export default function Layout() {
   return (
@@ -59,6 +60,7 @@ export default function Layout() {
       </footer>
 
       <AudioPlayer />
+      <TawkTo />
     </div>
   )
 }

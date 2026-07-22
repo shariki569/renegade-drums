@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-
-const SRC = '/videos/highlight-2.mp4'
+import { AUDIO_SRC } from '../data/media'
 
 function formatTime(sec) {
   if (!Number.isFinite(sec)) return '0:00'
@@ -84,7 +83,7 @@ export default function AudioPlayer() {
     <div className="audio_bar" role="region" aria-label="Background music">
       <video
         ref={audioRef}
-        src={SRC}
+        src={AUDIO_SRC}
         loop
         autoPlay
         playsInline

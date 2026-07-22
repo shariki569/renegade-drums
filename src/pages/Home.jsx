@@ -2,14 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import HeroVideos from '../HeroVideos'
 import { FB_URL, EMAIL, PHONE, PHONE_TEL, SLOGAN } from '../constants'
-
-const ABOUT_IMG = '/about-img.jpg'
-const TRIBAL1 = '/pahugyaw-2026.jpg'
-const TRIBAL2 = '/cmc-power-generators.jpg'
-const TRIBAL3 = '/miss-kittymae-jewels.jpg'
-const FEAT1 = '/feat1.jpg'
-const FEAT2 = '/feat2.jpg'
-const FEAT3 = '/feat3.jpg'
+import { HOME_MEDIA } from '../data/media'
 
 export default function Home() {
   return (
@@ -56,7 +49,7 @@ export default function Home() {
             <h3>Home base</h3>
             <p>1 Villagonzalo St<br />Cebu, Cebu City<br />Philippines</p>
             <figure className="side_figure">
-              <img src={ABOUT_IMG} alt="Drumline marchers with snare drums" width="600" height="400" />
+              <img src={HOME_MEDIA.about.src} alt={HOME_MEDIA.about.alt} width="600" height="400" />
             </figure>
           </aside>
         </div>
@@ -69,27 +62,15 @@ export default function Home() {
             <p>From Sinulog roads to school fields — Renegade shows up loud, tight, and ready.</p>
           </div>
           <div className="btm1_boxes">
-            <section>
-              <figure>
-                <img src={FEAT1} alt="Sinulog festival street performance" width="700" height="460" />
-              </figure>
-              <h3>Sinulog festivals</h3>
-              <p>Cebu’s biggest celebration — we bring parade punch for Sinulog routes, contingency drills, and festival heat.</p>
-            </section>
-            <section>
-              <figure>
-                <img src={FEAT2} alt="Fiesta and civic parade performance" width="700" height="460" />
-              </figure>
-              <h3>Parades &amp; fiestas</h3>
-              <p>Barangay fiestas, town celebrations, and civic marches that need that classic banda volume.</p>
-            </section>
-            <section>
-              <figure>
-                <img src={FEAT3} alt="School program and cultural show" width="700" height="460" />
-              </figure>
-              <h3>Schools &amp; shows</h3>
-              <p>Campus programs, processions, and cultural stages — marching grit or tribal percussion on call.</p>
-            </section>
+            {HOME_MEDIA.features.map((item) => (
+              <section key={item.src}>
+                <figure>
+                  <img src={item.src} alt={item.alt} width="700" height="460" />
+                </figure>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </section>
+            ))}
           </div>
         </div>
       </div>
@@ -101,28 +82,15 @@ export default function Home() {
             <p>Tribal percussion sets for corporate launches, blessings, and special openings across Cebu.</p>
           </div>
           <div className="btm3_boxes">
-            <section>
-              <figure className="photo_slot">
-                
-                <img src={TRIBAL1} alt="Pahugyaw 2026" width="700" height="460" />
-              </figure>
-              <h3>Pahugyaw 2026</h3>
-              <p>Cebu Landmasters, Inc. — held at Oakridge Pavilion.</p>
-            </section>
-            <section>
-              <figure className="photo_slot">
-                <img src={TRIBAL2} alt="CMC Power Generators" width="700" height="460" />
-              </figure>
-              <h3>CMC Power Generators</h3>
-              <p>Ribbon-cutting ceremony and house blessing.</p>
-            </section>
-            <section>
-              <figure className="photo_slot">
-                <img src={TRIBAL3} alt="Iino Day 2026" width="700" height="460" />
-              </figure>
-              <h3>Iino Day 2026</h3>
-              <p>Renegade Drums and Percussions brought the energy and excitement to Iino Day 2026 at Maribago Blue Water Resort!</p>
-            </section>
+            {HOME_MEDIA.tribalClients.map((item) => (
+              <section key={item.src}>
+                <figure className="photo_slot">
+                  <img src={item.src} alt={item.alt} width="700" height="460" />
+                </figure>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </section>
+            ))}
           </div>
         </div>
       </div>

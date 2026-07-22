@@ -1,0 +1,131 @@
+/**
+ * Media registry — add new photos/videos here after dropping files into public/.
+ *
+ * Folders:
+ *   public/images/home/          Home page photos
+ *   public/images/drum-bugle/    Drum & Bugle gallery
+ *   public/images/tribal/        Tribal Percussions gallery + client shots
+ *   public/images/sinulog-2025/  Sinulog booking gallery
+ *   public/videos/drum-bugle/    Drum & Bugle clips
+ *   public/videos/tribal/        Tribal Percussions clips
+ *   public/videos/hero/          Extra hero-only clips
+ *   public/videos/posters/       Video poster images
+ */
+
+export const HOME_MEDIA = {
+  about: { src: '/images/home/about-img.jpg', alt: 'Drumline marchers with snare drums' },
+  features: [
+    { src: '/images/home/feat1.jpg', alt: 'Sinulog festival street performance', title: 'Sinulog festivals', desc: 'Cebu\'s biggest celebration — we bring parade punch for Sinulog routes, contingency drills, and festival heat.' },
+    { src: '/images/home/feat2.jpg', alt: 'Fiesta and civic parade performance', title: 'Parades & fiestas', desc: 'Barangay fiestas, town celebrations, and civic marches that need that classic banda volume.' },
+    { src: '/images/home/feat3.jpg', alt: 'School program and cultural show', title: 'Schools & shows', desc: 'Campus programs, processions, and cultural stages — marching grit or tribal percussion on call.' },
+  ],
+  tribalClients: [
+    { src: '/images/tribal/pahugyaw-2026.jpg', alt: 'Pahugyaw 2026', title: 'Pahugyaw 2026', desc: 'Cebu Landmasters, Inc. — held at Oakridge Pavilion.' },
+    { src: '/images/tribal/cmc-power-generators.jpg', alt: 'CMC Power Generators', title: 'CMC Power Generators', desc: 'Ribbon-cutting ceremony and house blessing.' },
+    { src: '/images/tribal/miss-kittymae-jewels.jpg', alt: 'Iino Day 2026', title: 'Iino Day 2026', desc: 'Renegade Drums and Percussions brought the energy and excitement to Iino Day 2026 at Maribago Blue Water Resort!' },
+  ],
+}
+
+export const SINULOG_GALLERY = [
+  { src: '/images/sinulog-2025/sin-img1.jpg', alt: 'Renegade Drums Sinulog 2025 booking photo 1' },
+  { src: '/images/sinulog-2025/sin-img2.jpg', alt: 'Renegade Drums Sinulog 2025 booking photo 2' },
+  { src: '/images/sinulog-2025/sin-img3.jpg', alt: 'Renegade Drums Sinulog 2025 booking photo 3' },
+  { src: '/images/sinulog-2025/sin-img4.jpg', alt: 'Renegade Drums Sinulog 2025 booking photo 4' },
+  { src: '/images/sinulog-2025/sin-img5.jpg', alt: 'Renegade Drums Sinulog 2025 booking photo 5' },
+]
+
+export const DRUM_BUGLE_GALLERY = [
+  { src: '/images/home/about-img.jpg', alt: 'Drumline marchers with snare drums' },
+  { src: '/images/home/feat1.jpg', alt: 'Sinulog festival street performance' },
+  { src: '/images/home/feat2.jpg', alt: 'Fiesta and civic parade performance' },
+  { src: '/images/drum-bugle/dbc1.jpg', alt: 'Drum and Bugle atdbc1' },
+  { src: '/images/drum-bugle/dbc2.jpg', alt: 'Drum and Bugle atdbc2' },
+  { src: '/images/drum-bugle/dbc3.jpg', alt: 'Drum and Bugle atdbc3' },
+  { src: '/images/drum-bugle/dbc4.jpg', alt: 'Drum and Bugle atdbc4' },
+  { src: '/images/drum-bugle/dbc5.jpg', alt: 'Drum and Bugle atdbc5' },
+  { src: '/images/drum-bugle/dbc6.jpg', alt: 'Drum and Bugle atdbc6' },
+  { src: '/images/drum-bugle/dbc7.jpg', alt: 'Drum and Bugle atdbc7' },
+  { src: '/images/drum-bugle/dbc8.jpg', alt: 'Drum and Bugle atdbc8' },
+  { src: '/images/drum-bugle/dadat.jpg', alt: 'Drum and Bugle atdbc8' },
+]
+
+export const TRIBAL_GALLERY = [
+  { src: '/images/tribal/pahugyaw-2026.jpg', alt: 'Tribal percussion at Pahugyaw 2026' },
+  { src: '/images/tribal/cmc-power-generators.jpg', alt: 'Tribal percussion at CMC Power Generators' },
+  { src: '/images/tribal/miss-kittymae-jewels.jpg', alt: 'Tribal percussion at Iino Day 2026' },
+  { src: '/images/tribal/tribal-1.jpg', alt: 'Tribal percussion at tribal-1' },
+  { src: '/images/tribal/tribal2.jpg', alt: 'Tribal percussion at tribal-2' },
+  { src: '/images/tribal/tribal3.jpg', alt: 'Tribal percussion at tribal-3' },
+  { src: '/images/tribal/tribal4.jpg', alt: 'Tribal percussion at tribal-4' },
+  { src: '/images/tribal/tribal5.jpg', alt: 'Tribal percussion at tribal-5' },
+  { src: '/images/tribal/tribal6.jpg', alt: 'Tribal percussion at tribal-6' },
+  { src: '/images/tribal/tribal7.jpg', alt: 'Tribal percussion at tribal-7' },
+  { src: '/images/tribal/tribal8.jpg', alt: 'Tribal percussion at tribal-8' },
+
+]
+
+export const DRUM_BUGLE_CLIPS = [
+  {
+    src: '/videos/drum-bugle/highlight-5.mp4',
+    poster: '/images/drum-bugle/poster-img1.png',
+    title: 'On the march',
+    desc: 'Parade cadence and street energy.',
+  },
+  {
+    src: '/videos/drum-bugle/highlight-3.mp4',
+    poster: '/videos/posters/highlight-3.jpg',
+    title: 'Sinulog',
+    desc: 'Back-line bugle call for classic banda feel.',
+  },
+]
+
+export const TRIBAL_CLIPS = [
+  {
+    src: '/videos/tribal/highlight-1.mp4',
+    poster: '/images/tribal/bai-poster.png',
+    title: 'Renegade Drums and Percussions Sinulog 2026 highlights at the bai Hotel Cebu',
+    desc: 'Twilight Roofdeck Lounge + Bar with DJ Kate Jagdon ',
+  },
+  {
+    src: '/videos/tribal/highlight-2.mp4',
+    poster: '/images/tribal/casino-de-espanol-poster.png',
+    title: 'Casino Español de Cebu with our VVIP Client',
+    desc: 'Gala Night of the Casino Español de Cebu with our VVIP Client',
+  },
+  {
+    src: '/videos/tribal/tribal-highlight3.mp4',
+    poster: '/videos/posters/patria-poster.png',
+    title: 'Renegade Drums and Percussions at the Patria De Cebu, Cebu City Grand Opening!',
+    desc: '',
+  },
+]
+
+export const VIDEO_TABS = [
+  { id: 'tribal', label: 'Tribal Percussions', clips: TRIBAL_CLIPS },
+  { id: 'drum-bugle', label: 'Drum and Bugle', clips: DRUM_BUGLE_CLIPS },
+]
+
+export const HERO_CLIPS = [
+  {
+    src: '/videos/tribal/highlight-1.mp4',
+    poster: '/images/home/feat1.jpg',
+    label: 'On the march',
+  },
+  {
+    src: '/videos/tribal/highlight-2.mp4',
+    poster: '/images/home/about-img.jpg',
+    label: 'Drumline drive',
+  },
+  {
+    src: '/videos/drum-bugle/highlight-3.mp4',
+    poster: '/videos/posters/highlight-3.jpg',
+    label: 'Bugle & brass',
+  },
+  {
+    src: '/videos/hero/highlight-4.mp4',
+    poster: '/images/home/feat2.jpg',
+    label: 'Bugle & brass',
+  },
+]
+
+export const AUDIO_SRC = '/videos/tribal/highlight-1.mp4'
